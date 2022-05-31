@@ -1,0 +1,76 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 64px;
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.form-control {
+	position: relative;
+	margin: 20px 0;
+	max-width: 600px;
+}
+
+.form-control input {
+	border: 0;
+	border-bottom: 2px solid #333;
+	padding: 15px 0;
+	display: block;
+	font-size: 18px;
+	font-family: 'Muli', sans-serif;
+	width: 100%;
+	transition: 0.1s ease-in;
+}
+
+.form-control input:focus, 
+.form-control input:valid {
+	border-bottom-color: darksalmon;
+	outline: none;
+}
+
+.form-control input:focus + label span ,
+.form-control input:valid + label span{
+	color: darksalmon;
+	transform: translateY(-30px);
+}
+
+.form-control label {
+	position: absolute;
+	top: 15px;
+	left: 0;
+}
+
+.form-control label span {
+	display: inline-block;
+	font-size: 18px;
+	min-width: 5px;
+	transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.bio {
+  text-align: center;
+  color: gray;
+  margin-top: 16px;
+}
+
+.waveButton {
+  cursor: pointer;
+  margin-top: 16px;
+  padding: 8px;
+  border: 0;
+  border-radius: 5px;
+  
+}
